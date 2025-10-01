@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Es 2 Vue.js</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; background-color:beige; }
+        .box { padding: 15px; border: 1px solid #ccc; margin-top: 10px; border-radius: 5px; background-color: #f9f9f9; }
+        .text-danger { color: red; }
+        .active { background-color: #d4edda; }
+        td { font-size: 2em; }
+    </style>
+</head>
+<body>
+    <div id="app">
+		<table>
+            <tr v-for="prodotto in prodotti">
+                <td>id: {{ prodotto.id }}</td>
+                <td>&nbsp;&nbsp;&nbsp;nome: {{ prodotto.nome }}</td>
+                <td>&nbsp;&nbsp; &nbsp;prezzo: {{ prodotto.prezzo.toFixed(2) }} €</td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./es_4_lezione2_Vue.js"></script>
+</body>
+</html>
